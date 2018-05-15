@@ -1,0 +1,18 @@
+{
+    "baseURL": "https://0x148.com/",
+    "disableKinds": [
+        "404"
+    ],
+    "languages": {
+        "en": {
+            "copyright": "Yang Sheng Han",
+            "languageName": "English",
+            "title": "0x148"
+        },
+        "zh-tw": {
+            "copyright": "Yang Sheng Han",
+            "languageName": "中文",
+            "title": "0x148"
+        }
+    }
+}
