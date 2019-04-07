@@ -1,0 +1,40 @@
+.post-navigation {
+    @include block;
+
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+        @include post-shadow;
+
+        border: none;
+        flex-basis: 45%;
+        flex-direction: column;
+
+        &:first-child {
+            align-items: flex-start;
+        }
+
+        &:last-child {
+            align-items: flex-end;
+        }
+
+        &:not(:first-child) {
+            margin-left: 1.5rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .title {
+        font-size: $size-5;
+        font-weight: $weight-bold;
+        margin-bottom: 0;
+    }
+
+    .date {
+        font-size: $size-6;
+    }
+}

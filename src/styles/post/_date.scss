@@ -1,0 +1,48 @@
+$post-date-background-color: $white !default;
+
+.post-date {
+    background-color: $post-date-background-color;
+    border-bottom: 1px solid $grey-lighter;
+    border-left: 1px solid $grey-lighter;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+    .day {
+        border-right: 1px solid $grey-light;
+        font-size: nth($sizes, 3);
+        font-weight: $weight-bold;
+        grid-column-end: 2;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-row-start: 1;
+        line-height: nth($sizes, 3);
+        padding: 0.25rem 0.75rem;
+    }
+
+    .month {
+        font-size: nth($sizes, 6);
+        font-weight: $weight-bold;
+        grid-column-end: 3;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-row-start: 1;
+        line-height: nth($sizes, 6);
+        padding: 0.125rem 0.75rem;
+    }
+
+    .year {
+        font-size: nth($sizes, 6);
+        grid-column-end: 3;
+        grid-column-start: 2;
+        grid-row-end: 3;
+        grid-row-start: 2;
+        line-height: nth($sizes, 6);
+        padding: 0.125rem 0.75rem;
+    }
+}

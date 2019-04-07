@@ -1,0 +1,14 @@
+.header {
+    .progress {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        bottom: -1px;
+        color: $primary;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+}

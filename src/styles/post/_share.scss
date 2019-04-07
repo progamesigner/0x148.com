@@ -1,0 +1,56 @@
+.post-share-items {
+    @include block;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.post-share-container {
+    bottom: 0;
+    left: -1.5rem;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.post-share-list {
+    background-color: $white;
+    border: 1px solid $grey-lighter;
+    border-right: none;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 5rem;
+}
+
+.post-share-logo {
+    overflow: hidden;
+    padding-top: 0;
+    position: relative;
+    transition: padding-top $speed $easing;
+
+    &::before {
+        align-items: center;
+        background-color: $primary;
+        bottom: 0;
+        color: $white;
+        content: '\148';
+        display: flex;
+        font-family: $family-brand;
+        font-size: $size-3;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.is-collapsed {
+    .post-share-logo {
+        padding-top: 100%;
+    }
+}

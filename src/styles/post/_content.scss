@@ -1,0 +1,37 @@
+.post {
+    .content {
+        blockquote {
+            border-bottom: 1px solid $primary;
+            border-top: 1px solid $primary;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+            padding: 1.5rem 3rem;
+            position: relative;
+
+            &::after,
+            &::before {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 2rem 2rem;
+                content: '';
+                display: block;
+                height: 3rem;
+                position: absolute;
+                width: 3rem;
+            }
+
+            &::before {
+                background-image: svg-load('images/quote.svg', fill=$primary), linear-gradient($white, $white calc(#{1.25 / 3 * 100%} - 1px), $content-blockquote-background-color calc(#{1.25 / 3 * 100%} - 1px), $content-blockquote-background-color);
+                right: 0.5rem;
+                top: -1.25rem;
+            }
+
+            &::after {
+                background-image: svg-load('images/quote.svg', fill=$primary), linear-gradient($white, $white calc(#{1.25 / 3 * 100%} - 1px), $content-blockquote-background-color calc(#{1.25 / 3 * 100%} - 1px), $content-blockquote-background-color);
+                bottom: -1.25rem;
+                left: 0.5rem;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

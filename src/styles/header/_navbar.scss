@@ -1,0 +1,30 @@
+$navbar-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+
+.header {
+    .navbar {
+        backdrop-filter: blur(0.25rem);
+        background-color: rgba($grey-lighter, 0.75);
+        box-shadow: $navbar-shadow;
+        padding-bottom: 0.75rem;
+        padding-top: 0.75rem;
+        transition: background-color $speed $easing, padding-bottom $speed $easing, padding-top $speed $easing;
+
+        @include touch {
+            background-color: $white;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &.is-collapsed {
+            background-color: $white;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    .navbar-brand {
+        .navbar-item {
+            font-family: $family-brand;
+        }
+    }
+}

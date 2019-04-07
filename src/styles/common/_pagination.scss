@@ -1,0 +1,8 @@
+$pagination-background-color: $white !default;
+
+.pagination-ellipsis,
+.pagination-link,
+.pagination-next,
+.pagination-previous {
+    background-color: $pagination-background-color;
+}

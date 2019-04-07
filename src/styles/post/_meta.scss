@@ -1,0 +1,20 @@
+.post-meta {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta-item {
+    display: flex;
+
+    .tags {
+        margin-left: 0.5rem;
+    }
+
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}
+
+.post-category {
+    text-transform: uppercase;
+}

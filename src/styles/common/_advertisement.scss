@@ -1,0 +1,39 @@
+$advertisement-background-color: $grey-lighter !default;
+
+.advertisement {
+    @include block;
+
+    background-color: $advertisement-background-color;
+    margin: 0 auto;
+    position: relative;
+
+    @include mobile {
+        height: 100px;
+        width: 320px;
+    }
+
+    @include tablet-only {
+        height: 60px;
+        width: 468px;
+    }
+
+    @include desktop {
+        height: 90px;
+        width: 728px;
+    }
+
+    :not(:last-child) {
+        position: relative;
+        z-index: 10;
+    }
+
+    :last-child {
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+}
