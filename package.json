@@ -1,0 +1,36 @@
+{
+  "name": "0x148.com",
+  "description": "0x148.com",
+  "keywords": [
+    "0x148",
+    "blog"
+  ],
+  "author": "Yang Sheng Han <progamesigner@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progamesigner/0x148.com.git"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "assets-webpack-plugin": "^3.9.10",
+    "babel-loader": "^8.0.5",
+    "bulma": "^0.7.4",
+    "clipboard": "^2.0.4",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "lodash": "^4.17.11",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-import-url": "^4.0.0",
+    "postcss-inline-svg": "^3.1.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
