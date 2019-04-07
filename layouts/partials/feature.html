@@ -1,0 +1,39 @@
+{{ with .Params.feature }}
+    {{ $banner := $.Resources.GetMatch (.banner | default "/") }}
+    {{ $header := $.Resources.GetMatch (.image | default "/") }}
+    {{ $video := .video | default false }}
+
+    {{ if and .IsPage $video }}
+        <div class="media is-video">
+            <iframe src="https://www.youtube.com/embed/{{ $video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    {{ else if $header }}
+        {{ $image := $header.Fill "1920x640" }}
+        {{ $caption := .caption | default $header.Name }}
+
+        <figure class="image media is-image">
+            <img src="{{ $image.RelPermalink }}" alt="{{ $caption }}">
+            {{ with $caption }}
+                <figcaption>{{ . }}</figcaption>
+            {{ end }}
+        </figure>
+    {{ else if $banner }}
+        {{ $image := $banner.Fill "1920x320" }}
+        {{ $caption := .caption | default $banner.Name }}
+
+        <figure class="image media is-banner">
+            <img src="{{ $image.RelPermalink }}" alt="{{ $caption }}">
+            {{ with $caption }}
+                <figcaption>{{ . }}</figcaption>
+            {{ end }}
+        </figure>
+    {{ else }}
+        <div class="image media is-image">
+            <p class="title">Header</p>
+        </div>
+    {{ end }}
+{{ else }}
+    <div class="image media is-banner">
+        <img src="holder.js/1920x320" alt="{{ .Title }}">
+    </div>
+{{ end }}

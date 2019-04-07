@@ -1,0 +1,12 @@
+{{ with .Params.feature }}
+    {{ $media := default ($.Resources.GetMatch (.banner | default "/")) ($.Resources.GetMatch (.image | default "/")) }}
+
+    {{ if $media }}
+        {{ $image := $media.Fill "1512x1080" }}
+        {{ $caption := .caption | default $media.Name }}
+
+        <figure class="image media">
+            <img src="{{ $image.RelPermalink }}" alt="{{ $caption }}">
+        </figure>
+    {{ end }}
+{{ end }}
