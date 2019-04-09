@@ -41,9 +41,6 @@ module.exports = (env, options) => {
                                         removeFill: true,
                                         xmlns: false
                                     }),
-                                    require('postcss-import-url')({
-                                        modernBrowser: true
-                                    }),
                                     require('cssnano')({
                                         preset: [
                                             'default',
