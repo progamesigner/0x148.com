@@ -38,6 +38,9 @@
                             {{ end }}
                         {{ end }}
                     {{ end }}
+                </div>
+
+                <div class="navbar-end">
                     {{ if .IsTranslated }}
                         {{ range .Translations.ByWeight.Reverse }}
                             <a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Title }}">
@@ -45,41 +48,40 @@
                             </a>
                         {{ end }}
                     {{ end }}
-                </div>
-
-                <div class="navbar-end">
-                    {{ with .Site.Params.GitHub }}
+                    <div class="navbar-item is-social-media">
+                        {{ with .Site.Params.GitHub }}
+                            <div class="navbar-item">
+                                <a class="icon is-github" href="{{ . }}" rel="external noopener">
+                                    {{ partial "svg/github.svg" (dict "size" 24) }}
+                                </a>
+                            </div>
+                        {{ end }}
+                        {{ with .Site.Params.Twitter }}
+                            <div class="navbar-item">
+                                <a class="icon is-twitter" href="{{ . }}" rel="external noopener">
+                                    {{ partial "svg/twitter.svg" (dict "size" 24) }}
+                                </a>
+                            </div>
+                        {{ end }}
+                        {{ with .Site.Params.Facebook }}
+                            <div class="navbar-item">
+                                <a class="icon is-facebook" href="{{ . }}" rel="external noopener">
+                                    {{ partial "svg/facebook.svg" (dict "size" 24) }}
+                                </a>
+                            </div>
+                        {{ end }}
+                        {{ with .Site.Params.LinkedIn }}
+                            <div class="navbar-item">
+                                <a class="icon is-linkedin" href="{{ . }}" rel="external noopener">
+                                    {{ partial "svg/linkedin.svg" (dict "size" 24) }}
+                                </a>
+                            </div>
+                        {{ end }}
                         <div class="navbar-item">
-                            <a class="icon is-github" href="{{ . }}" rel="external noopener">
-                                {{ partial "svg/github.svg" (dict "size" 24) }}
+                            <a class="icon is-rss" href="{{ .Site.RSSLink }}">
+                                {{ partial "svg/rss.svg" (dict "size" 24) }}
                             </a>
                         </div>
-                    {{ end }}
-                    {{ with .Site.Params.Twitter }}
-                        <div class="navbar-item">
-                            <a class="icon is-twitter" href="{{ . }}" rel="external noopener">
-                                {{ partial "svg/twitter.svg" (dict "size" 24) }}
-                            </a>
-                        </div>
-                    {{ end }}
-                    {{ with .Site.Params.Facebook }}
-                        <div class="navbar-item">
-                            <a class="icon is-facebook" href="{{ . }}" rel="external noopener">
-                                {{ partial "svg/facebook.svg" (dict "size" 24) }}
-                            </a>
-                        </div>
-                    {{ end }}
-                    {{ with .Site.Params.LinkedIn }}
-                        <div class="navbar-item">
-                            <a class="icon is-linkedin" href="{{ . }}" rel="external noopener">
-                                {{ partial "svg/linkedin.svg" (dict "size" 24) }}
-                            </a>
-                        </div>
-                    {{ end }}
-                    <div class="navbar-item">
-                        <a class="icon is-rss" href="{{ .Site.RSSLink }}">
-                            {{ partial "svg/rss.svg" (dict "size" 24) }}
-                        </a>
                     </div>
                 </div>
             </div>
