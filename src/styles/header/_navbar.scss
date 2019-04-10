@@ -1,10 +1,10 @@
-$navbar-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+$header-navbar-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
 
 .header {
     .navbar {
         backdrop-filter: blur(0.25rem);
         background-color: rgba($grey-lighter, 0.75);
-        box-shadow: $navbar-shadow;
+        box-shadow: $header-navbar-shadow;
         padding-bottom: 0.75rem;
         padding-top: 0.75rem;
         transition: background-color $speed $easing, padding-bottom $speed $easing, padding-top $speed $easing;
@@ -26,6 +26,10 @@ $navbar-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !defaul
                 align-items: center;
                 display: flex;
                 justify-content: left;
+            }
+
+            &.is-current {
+                color: lighten($text, 15%);
             }
         }
     }

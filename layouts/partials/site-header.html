@@ -22,14 +22,22 @@
             <div class="navbar-menu">
                 <div class="navbar-start">
                     {{ range .Site.Menus.main }}
-                        {{ with .Page }}
-                            <a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Name }}">
-                                {{ .Name }}
-                            </a>
+                        {{ if $.IsMenuCurrent "main" . }}
+                            {{ with .Page }}
+                                <a class="navbar-item is-current" href="{{ .RelPermalink }}" title="{{ .Name }}">
+                                    {{ .Name }}
+                                </a>
+                            {{ end }}
                         {{ else }}
-                            <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}">
-                                {{ .Name }}
-                            </a>
+                            {{ with .Page }}
+                                <a class="navbar-item" href="{{ .RelPermalink }}" title="{{ .Name }}">
+                                    {{ .Name }}
+                                </a>
+                            {{ else }}
+                                <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}">
+                                    {{ .Name }}
+                                </a>
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                 </div>
