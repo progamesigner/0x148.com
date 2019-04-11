@@ -1,7 +1,0 @@
-.post-comments {
-    @include block;
-    @include post-shadow;
-
-    background-color: $white;
-    padding: 1.5rem;
-}

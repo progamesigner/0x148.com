@@ -1,8 +1,4 @@
 .DS_Store
 .vscode
-data/assets.json
-node_modules
 public
 resources
-static/*.css
-static/*.js
