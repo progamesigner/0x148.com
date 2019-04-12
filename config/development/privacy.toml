@@ -1,0 +1,5 @@
+[disqus]
+    disable = true
+
+[googleAnalytics]
+    disable = true

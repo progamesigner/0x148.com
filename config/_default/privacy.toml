@@ -1,0 +1,9 @@
+[googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+
+[twitter]
+    enableDNT = true
+
+[youtube]
+    privacyEnhanced = true

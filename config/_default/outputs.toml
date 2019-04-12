@@ -1,0 +1,5 @@
+home = ["HTML", "AMP", "JSON", "RSS"]
+page = ["HTML", "AMP"]
+section = ['HTML', 'AMP', 'RSS']
+taxonomy = ['HTML', 'AMP', 'RSS']
+taxonomyTerm = ['HTML', 'AMP', 'RSS']
