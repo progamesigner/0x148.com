@@ -1,0 +1,25 @@
+threshold = 0
+includeNewer = false
+toLower = true
+
+[[indices]]
+    name  = "series"
+    weight = 100
+
+[[indices]]
+    name  = "categories"
+    weight = 80
+
+[[indices]]
+    name  = "tags"
+    weight = 90
+
+[[indices]]
+    name  = "date"
+    pattern = "01"
+    weight = 20
+
+[[indices]]
+    name  = "date"
+    pattern = "2006"
+    weight = 10
