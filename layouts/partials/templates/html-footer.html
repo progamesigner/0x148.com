@@ -1,0 +1,11 @@
+<p class="has-text-centered">
+    {{ with .Site.Author }}
+        &copy; {{ now.Format "2006" }} <span class="has-text-danger">&hearts;</span> <a href="{{ .url }}">{{ .name }}</a>.
+    {{ end }}
+</p>
+<p class="has-text-centered">
+    Content is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>.
+</p>
+<p class="has-text-centered">
+    <a href="https://bulma.io" title="Made with Bulma">Bulma</a> &middot; <a href="https://gohugo.io" title="Built with Hugo">Hugo</a> &middot; <a href="https://netlify.com" title="Deployed to Netlify">Netlify</a>
+</p>
