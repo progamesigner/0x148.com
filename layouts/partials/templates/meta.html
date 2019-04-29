@@ -1,0 +1,9 @@
+{{- $browserconfig := resources.Get "browserconfig.xml" | resources.ExecuteAsTemplate "browserconfig.xml" . -}}
+
+<meta name="msapplication-config" content="{{ $browserconfig.Permalink }}">
+
+<meta name="theme-color" content="{{ .Site.Params.themeColor | safeHTMLAttr }}">
+
+{{ with .GitInfo }}
+    <meta name="git-version" content="{{ .AbbreviatedHash | safeHTMLAttr }}">
+{{ end }}

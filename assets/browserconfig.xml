@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="{{ "tile.png" | absURL }}" />
+            <square150x150logo src="{{ "tile.png" | absURL }}" />
+            <square310x310logo src="{{ "tile.png" | absURL }}" />
+            <wide310x150logo src="{{ "wide.png" | absURL }}" />
+            <TileImage src="{{ "tile.png" | absURL }}" />
+            <TileColor>{{ .Site.Params.ThemeColor | safeHTMLAttr }}</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
