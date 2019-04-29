@@ -2,3 +2,4 @@ languageCode = "zh-TW"
 languageName = "中文"
 title = "0x148"
 copyright = "Copyright (c) Yang Sheng Han."
+weight = 10

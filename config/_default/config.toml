@@ -1,0 +1,11 @@
+baseURL = "https://0x148.com/"
+defaultContentLanguage = "en-us"
+disableAliases = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+PygmentsCodeFences = true
+PygmentsCodefencesGuessSyntax = true
+PygmentsOptions = "linenos=table"
+pygmentsUseClasses = true
+relativeURLs = true
+summaryLength = 140
