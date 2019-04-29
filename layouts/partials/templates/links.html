@@ -1,0 +1,15 @@
+{{- $pgp := resources.Get "pgp.asc" | resources.ExecuteAsTemplate "pgp.asc" . -}}
+{{- $author := resources.Get "humans.txt" | resources.ExecuteAsTemplate "humans.txt" . -}}
+{{- $manifest := resources.Get "manifest.webmanifest" | resources.ExecuteAsTemplate "manifest.webmanifest" . -}}
+
+<link rel="author" href="{{ $author.Permalink }}">
+<link rel="license" href="{{ .Site.Params.LicenseURL | safeURL }}">
+
+<link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
+<link rel="apple-touch-icon" sizes="152x152 167x167 180x180" href="{{ "apple-touch-icon.png" | absURL }}">
+<link rel="icon" sizes="192x192" href="{{ "favicon.png" | absURL }}">
+
+<link rel="manifest" href="{{ $manifest.Permalink }}">
+
+<link rel="pgpkey" type="application/pgp-keys" href="{{ $pgp.Permalink }}">
+<link rel="publickey" type="application/pgp-keys" href="{{ $pgp.Permalink }}">

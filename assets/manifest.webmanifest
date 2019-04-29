@@ -1,0 +1,19 @@
+{
+    "background_color": "{{ .Site.Params.BackgroundColor | safeHTMLAttr }}",
+    "description": "{{ .Site.Params.Description }}",
+    "name": "{{ .Site.Title }}",
+    "start_url": "/?utm_source=homescreen",
+    "theme_color": "{{ .Site.Params.ThemeColor | safeHTMLAttr }}",
+    "icons": [
+        {
+            "src": "{{ "favicon.png" | absURL }}",
+            "sizes": "48x48 72x72 96x96 128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ "favicon.png" | absURL }}",
+            "sizes": "144x144 168x168 192x192 256x256",
+            "type": "image/png"
+        }
+    ]
+}

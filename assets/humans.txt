@@ -1,0 +1,28 @@
+{{- $languages := slice -}}
+
+{{- range .Site.Languages -}}
+    {{- $languages = $languages | append .LanguageName -}}
+{{- end -}}
+
+# TEAM
+
+    Yang Sheng Han
+        Blog: https://0x148.com
+        Website: https://progamesigner.com
+        Contact: progamesigner [at] gmail.com
+        Twitter: @progamesigner
+        Location: Taipei, Taiwan
+
+# SITE
+	Last update: {{ .Site.Home.Lastmod.Format "2006/01/02" }}
+	Languages: {{ delimit $languages " / " }}
+
+# COMPONENTS
+
+    [Bulma](https://bulma.io)
+    [Hugo](https://gohugo.io)
+    [Netlify](https://netlify.com)
+
+    [Webpack](http://webpack.js.org)
+
+    [Visual Studio Code](https://code.visualstudio.com)
