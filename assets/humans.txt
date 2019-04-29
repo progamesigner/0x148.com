@@ -14,7 +14,7 @@
         Location: Taipei, Taiwan
 
 # SITE
-	Last update: {{ .Site.Home.Lastmod.Format "2006/01/02" }}
+	Last update: {{ .Site.LastChange.Format "2006/01/02" }}
 	Languages: {{ delimit $languages " / " }}
 
 # COMPONENTS
