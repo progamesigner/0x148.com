@@ -1,0 +1,65 @@
+[[link]]
+    title = "Facebook"
+    name = "facebook"
+    url = "https://facebook.com/0x148"
+    weight = 20
+
+[[link]]
+    title = "GitHub"
+    name = "github"
+    url = "https://github.com/progamesigner"
+    weight = 0
+
+[[link]]
+    title = "LinkedIn"
+    name = "linkedin"
+    url = "https://linkedin.com/in/progamesigner"
+    weight = 30
+
+[[link]]
+    title = "Twitter"
+    name = "twitter"
+    url = "https://twitter.com/progamesigner"
+    weight = 10
+
+[[share]]
+    title = "Share with Facebook"
+    name = "facebook"
+    url = "https://www.facebook.com/dialog/share?href={url}"
+    weight = 10
+
+[[share]]
+    title = "用 Twitter 分享"
+    name = "twitter"
+    url = "https://twitter.com/intent/tweet?url={url}&text={title}"
+    weight = 20
+
+[[share]]
+    title = "Share with LINE"
+    name = "line"
+    url = "https://lineit.line.me/share/ui?url={url}&text={title}"
+    weight = 30
+
+[[share]]
+    title = "Share with LinkedIn"
+    name = "linkedin"
+    url = "https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={description}&source={base}"
+    weight = 40
+
+[[share]]
+    title = "Share with Trello"
+    name = "trello"
+    url = "https://trello.com/add-card?source={base}&url={url}&name={title}&desc={description}"
+    weight = 50
+
+[[share]]
+    title = "Share with Pocket"
+    name = "pocket"
+    url = "https://getpocket.com/edit?url={url}"
+    weight = 60
+
+[[share]]
+    title = "Share with Email"
+    name = "email"
+    url = "mailto:?subject={title}&body={url}"
+    weight = 70
