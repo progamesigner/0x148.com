@@ -1,3 +1,4 @@
+archive = "archives"
 category = "categories"
 series = "series"
 tag = "tags"

@@ -1,44 +1,18 @@
-description = "A blog consists of programming, coding, and digital life."
-
-### Hugo
-comments = true
-math = true
-toc = true
-
-### 0x148
 themeColor = "#114488"
 backgroundColor = "#F4F4F4"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
-### Theme
-advertisement = true
+comments = true
+math = true
 share = true
+toc = true
 
-ampModules = ["amp-sidebar", "amp-analytics", "amp-form", "amp-iframe"]
+ampIFrameBase = "https://iframe.0x148.com/"
+ampComponents = ["amp-sidebar", "amp-analytics", "amp-form", "amp-iframe", "amp-consent"]
+ampModules = ["google-analytics"]
 htmlModules = ["google-analytics", "disqus", "katex", "katex-auto-render", "katex-copy-tex", "holderjs"]
 
 navbarMenuName = "navbar"
 navbarLinkName = "link"
 
 pgpFingerPrint = "11BEC92C73656BE7C4D1EC61546B738781027B88"
-
-[icons]
-    email = "mdi:email"
-    facebook = "mdi:facebook-box"
-    github = "mdi:github-box"
-    line = "uil:line"
-    linkedin = "mdi:linkedin-box"
-    pocket = "mdi:pocket"
-    trello = "mdi:trello"
-    twitter = "mdi:twitter-box"
-
-[colors]
-    email = "#EA4335"
-    facebook = "#3B5998"
-    github = "#4078C0"
-    line = "#00c300"
-    linkedin = "#0077B5"
-    pocket = "#EF4056"
-    rss = "#F26522"
-    trello = "#0079BF"
-    twitter = "#1DA1F2"
