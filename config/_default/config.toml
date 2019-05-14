@@ -3,8 +3,10 @@ copyright = "Copyright (c) Yang Sheng Han."
 defaultContentLanguage = "en-us"
 disableAliases = true
 enableRobotsTXT = true
+footnoteReturnLinkContents = "&hookleftarrow;"
 hasCJKLanguage = true
-PygmentsOptions = "linenos=table"
+paginate = 10
+pygmentsOptions = "linenos=table"
 pygmentsUseClasses = true
 relativeURLs = true
 summaryLength = 140
