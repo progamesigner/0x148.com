@@ -1,4 +1,7 @@
 {
     "name": "progamesigner",
-    "logo": "https://0x148.com/favicon.png"
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://0x148.com/favicon.png"
+    }
 }
