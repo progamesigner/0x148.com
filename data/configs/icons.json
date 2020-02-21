@@ -1,10 +1,11 @@
 {
     "email": "mdi:email",
-    "facebook": "mdi:facebook-box",
-    "github": "mdi:github-box",
+    "facebook": "mdi:facebook",
+    "github": "mdi:github",
     "line": "uil:line",
-    "linkedin": "mdi:linkedin-box",
-    "pocket": "mdi:pocket",
+    "linkedin": "mdi:linkedin",
+    "pocket": "zmdi:pocket",
     "trello": "mdi:trello",
-    "twitter": "mdi:twitter-box"
+    "twitter": "mdi:twitter",
+    "icon-rss": "mdi:rss"
 }
