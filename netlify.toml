@@ -4,4 +4,4 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.76.3"
+  HUGO_VERSION = "0.75.1"
