@@ -10,6 +10,6 @@ Here is my first post in blog.
 
 Mainly built via [Hugo](https://gohugo.io) and host on [Netlify](https://netlify.com).
 
-Style with [Bulma](https://bulma.io) and [0x148](https://0x148.progamesigner.com).
+Style with [Bulma](https://bulma.io) and [0x148](https://theme.0x148.com).
 
 I will write some posts about development, programming, and digital life.
